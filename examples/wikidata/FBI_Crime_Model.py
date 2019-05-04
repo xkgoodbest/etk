@@ -419,7 +419,7 @@ class FBI_Crime_Model():
                 return 'Q112953'
             if county1 == 'oglalalakotacounty_sd':
                 return 'Q495201'
-        return None
+        return 'Q504385'
 
 
 if __name__ == "__main__":
