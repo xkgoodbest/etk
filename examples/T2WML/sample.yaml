@@ -1,0 +1,16 @@
+statementMapping:
+  - startColumn: C
+    startRow: 7
+    endColumn: C
+    endRow: 37
+  - item: resolve_item(B$row)
+    property: C3001 # violent crime
+    value: $col$row
+    unit: D1002
+    qualifier:
+      - property: P85 #point in time
+        value: '{{re.search(r", (\d{4})", self.cell_value("A","4")).group(1)}}'
+        type: time
+        calendar: Q1985727
+        precision: year
+        time_zone: 0
